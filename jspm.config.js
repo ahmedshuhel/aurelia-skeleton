@@ -8,6 +8,9 @@ SystemJS.config({
   babelOptions: {
     "presets": [
       "babel-preset-stage-0"
+    ],
+    "plugins": [
+      "babel-plugin-transform-decorators"
     ]
   },
 
@@ -35,6 +38,7 @@ SystemJS.config({
     "aurelia-templating-binding": "npm:aurelia-templating-binding@1.0.0-beta.1.1.2",
     "aurelia-templating-resources": "npm:aurelia-templating-resources@1.0.0-beta.1.1.3",
     "aurelia-templating-router": "npm:aurelia-templating-router@1.0.0-beta.1.1.2",
+    "babel-plugin-transform-decorators": "npm:babel-plugin-transform-decorators@6.6.5",
     "babel-preset-stage-0": "npm:babel-preset-stage-0@6.5.0",
     "bootstrap": "github:twbs/bootstrap@3.3.6",
     "buffer": "github:jspm/nodelibs-buffer@0.2.0-alpha",

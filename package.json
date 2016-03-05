@@ -3,6 +3,7 @@
     "name": "main",
     "dependencies": {
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1.1.4",
+      "babel-plugin-transform-decorators": "npm:babel-plugin-transform-decorators@^6.6.5",
       "babel-preset-stage-0": "npm:babel-preset-stage-0@^6.5.0",
       "bootstrap": "github:twbs/bootstrap@^3.3.6",
       "fetch": "github:github/fetch@^0.11.0",
@@ -85,10 +86,78 @@
         }
       },
       "npm:babel-runtime@5.8.35": {
-        "main": false,
+        "main": "index",
         "dependencies": {},
         "optionalDependencies": {
           "core-js": "^1.2.0"
+        },
+        "format": "cjs",
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./core-js/object.js": "./core-js/object/index.js",
+          "./regenerator.js": "./regenerator/index.js",
+          "babel-runtime": "."
+        }
+      },
+      "npm:core-js@1.2.6": {
+        "format": "cjs",
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./build.js": "./build/index.js",
+          "./core.js": "./core/index.js",
+          "./es5.js": "./es5/index.js",
+          "./es6.js": "./es6/index.js",
+          "./es7.js": "./es7/index.js",
+          "./fn/array.js": "./fn/array/index.js",
+          "./fn/function.js": "./fn/function/index.js",
+          "./fn/html-collection.js": "./fn/html-collection/index.js",
+          "./fn/math.js": "./fn/math/index.js",
+          "./fn/node-list.js": "./fn/node-list/index.js",
+          "./fn/number.js": "./fn/number/index.js",
+          "./fn/object.js": "./fn/object/index.js",
+          "./fn/reflect.js": "./fn/reflect/index.js",
+          "./fn/regexp.js": "./fn/regexp/index.js",
+          "./fn/string.js": "./fn/string/index.js",
+          "./fn/symbol.js": "./fn/symbol/index.js",
+          "./js.js": "./js/index.js",
+          "./library.js": "./library/index.js",
+          "./library/core.js": "./library/core/index.js",
+          "./library/es5.js": "./library/es5/index.js",
+          "./library/es6.js": "./library/es6/index.js",
+          "./library/es7.js": "./library/es7/index.js",
+          "./library/fn/array.js": "./library/fn/array/index.js",
+          "./library/fn/function.js": "./library/fn/function/index.js",
+          "./library/fn/html-collection.js": "./library/fn/html-collection/index.js",
+          "./library/fn/math.js": "./library/fn/math/index.js",
+          "./library/fn/node-list.js": "./library/fn/node-list/index.js",
+          "./library/fn/number.js": "./library/fn/number/index.js",
+          "./library/fn/object.js": "./library/fn/object/index.js",
+          "./library/fn/reflect.js": "./library/fn/reflect/index.js",
+          "./library/fn/regexp.js": "./library/fn/regexp/index.js",
+          "./library/fn/string.js": "./library/fn/string/index.js",
+          "./library/fn/symbol.js": "./library/fn/symbol/index.js",
+          "./library/js.js": "./library/js/index.js",
+          "./library/web.js": "./library/web/index.js",
+          "./package": "./package.json",
+          "./web.js": "./web/index.js"
         }
       },
       "npm:font-awesome@4.5.0": {
@@ -103,6 +172,20 @@
         "ignore": [
           "test.js"
         ]
+      },
+      "npm:lodash@3.10.1": {
+        "format": "cjs",
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {}
       }
     }
   }
