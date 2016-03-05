@@ -10,7 +10,7 @@ SystemJS.config({
       "babel-preset-stage-0"
     ],
     "plugins": [
-      "babel-plugin-transform-decorators"
+      "babel-plugin-transform-decorators-legacy"
     ]
   },
 
@@ -19,6 +19,7 @@ SystemJS.config({
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.1.4",
     "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.5",
     "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1.1.1",
+    "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.1.1",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.1.4",
     "aurelia-history": "npm:aurelia-history@1.0.0-beta.1.1.1",
     "aurelia-history-browser": "npm:aurelia-history-browser@1.0.0-beta.1.1.4",
@@ -38,7 +39,7 @@ SystemJS.config({
     "aurelia-templating-binding": "npm:aurelia-templating-binding@1.0.0-beta.1.1.2",
     "aurelia-templating-resources": "npm:aurelia-templating-resources@1.0.0-beta.1.1.3",
     "aurelia-templating-router": "npm:aurelia-templating-router@1.0.0-beta.1.1.2",
-    "babel-plugin-transform-decorators": "npm:babel-plugin-transform-decorators@6.6.5",
+    "babel-plugin-transform-decorators-legacy": "npm:babel-plugin-transform-decorators-legacy@1.3.4",
     "babel-preset-stage-0": "npm:babel-preset-stage-0@6.5.0",
     "bootstrap": "github:twbs/bootstrap@3.3.6",
     "buffer": "github:jspm/nodelibs-buffer@0.2.0-alpha",
@@ -380,6 +381,13 @@ SystemJS.config({
         "babel-runtime": "npm:babel-runtime@5.8.35"
       }
     },
+    "npm:babel-plugin-transform-decorators-legacy@1.3.4": {
+      "map": {
+        "babel-plugin-syntax-decorators": "npm:babel-plugin-syntax-decorators@6.5.0",
+        "babel-runtime": "npm:babel-runtime@6.6.1",
+        "babel-template": "npm:babel-template@6.6.5"
+      }
+    },
     "npm:babel-plugin-transform-decorators@6.6.5": {
       "map": {
         "babel-helper-define-map": "npm:babel-helper-define-map@6.6.5",
@@ -448,6 +456,11 @@ SystemJS.config({
       "map": {
         "babel-plugin-transform-async-to-generator": "npm:babel-plugin-transform-async-to-generator@6.5.0",
         "babel-plugin-transform-exponentiation-operator": "npm:babel-plugin-transform-exponentiation-operator@6.5.0"
+      }
+    },
+    "npm:babel-runtime@6.6.1": {
+      "map": {
+        "core-js": "npm:core-js@2.1.3"
       }
     },
     "npm:babel-template@6.6.5": {
